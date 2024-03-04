@@ -1,2 +1,2 @@
 # bouldering
-A website about why i enjoy bouldering and more.
+A website about why I enjoy bouldering and more.
