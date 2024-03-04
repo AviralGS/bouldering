@@ -2,11 +2,11 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/questions.css">
         <title>Questions</title>
     </head>
     <body>
-        <h1>Survey</h1>
+        <h1>Are you Ready?</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -15,5 +15,72 @@
                 <li><a href="techniques.html">Techniques</a></li>
             </ul>
         </nav>
+
+        <h1>Bouldering Survey</h1>
+        <form method="post">
+            <fieldset>
+                <legend>Experiece On Bouldering Survey</legend>
+                
+                <div>
+                    <label for="firstName">First Name :</label>
+                    <input type="text" id="firstName" name="first_name" placeholder="(optional)">
+                </div>
+
+                <div>
+                    <label for="gender">Gender :</label>
+                    <input type="text" id="gender" name="gender" required>
+                </div>
+
+                <div>
+                    <label for="age">Age :</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div>
+                    <label>Have you climbed before :</label><br>
+
+                    <input type="radio" id="beginner" name="climbing_experience" value="beginner" required>
+                    <label for="beginner">Beginner</label><br>
+
+                    <input type="radio" id="intermediate" name="climbing_experience" value="intermediate">
+                    <label for="intermediate">Intermediate</label><br>
+
+                    <input type="radio" id="advanced" name="climbing_experience" value="advanced">
+                    <label for="advanced">Advanced</label><br>
+                </div>
+
+                <div>
+                    <label>Do you enjoy climbing :</label><br>
+
+                    <input type="radio" id="enjoy-yes" name="enjoy_climbing" required>
+                    <label for="enjoy-yes">Yes</label><br>
+
+                    <input type="radio" id="enjoy-somewhat" name="enjoy_climbing">
+                    <label for="enjoy-somewhat">Somewhat</label><br>
+
+                    <input type="radio" id="enjoy-no" name="enjoy_climbing">
+                    <label for="enjoy-no">No</label>
+                </div>
+                
+                <div>
+                    <label for="comments">Has bouldering helped you develop as a person?</label>
+                    <textarea id="coments" name="comments" placeholder="(if no, please type N/A)" required></textarea>
+                </div>
+
+                <div>
+                    <label>Will you continue bouldering? :</label>
+
+                    <input type="checkbox" id="continue-yes" name="continue" required>
+                    <label for="continue-yes">Yes</label>
+
+                    <input type="checkbox" id="continue-no" name="continue">
+                    <label for="continue-no">No</label>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
     </body>
 </html>
